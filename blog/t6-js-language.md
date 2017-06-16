@@ -27,3 +27,15 @@ function add10(x){ return x + 10 }
 ```
 
 In a function the squiggly brackets are used to define what is part of the function body and what is not.
+
+
+single quotes `''` are used to define strings
+Double quotes `""` are used for the same thing
+
+The advantage of having to types of quotes means that it is easy to mix them
+for example:   
+```javascript  
+var potato "She said 'potato'"
+```
+
+Most of the time I use double brackets, becuase in other languages single quotes are used to denote object literals.
