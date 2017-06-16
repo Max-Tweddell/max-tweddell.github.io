@@ -2,11 +2,14 @@
 
 ### Syntax and Stuff
 
-there are three types of brackets
+There are three types of brackets
     ``[]{}()``
 
 Round brackets or parentheses or parens for short are used for calling functions e.g ``getRandomNumber()``, for defining function method arguments eg function `function add10(x)`
+if you put brackets around a function like ``(function getRandomNumber(){return 4;})``
+it wil automatically call itself.
 
+---
 Squiggly brackets `{}` are used for control flow and defining objects
 
 Examples:
@@ -28,8 +31,10 @@ function add10(x){ return x + 10 }
 
 In a function the squiggly brackets are used to define what is part of the function body and what is not.
 
+---
 
-single quotes `''` are used to define strings
+
+Single quotes `''` are used to define strings
 Double quotes `""` are used for the same thing
 
 The advantage of having to types of quotes means that it is easy to mix them
@@ -38,4 +43,4 @@ for example:
 var potato "She said 'potato'"
 ```
 
-Most of the time I use double brackets, becuase in other languages single quotes are used to denote object literals.
+Most of the time I use double brackets, because in other languages single quotes are used to denote object literals.
