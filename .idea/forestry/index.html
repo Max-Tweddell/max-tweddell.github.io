@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tree Calculator</title>
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form name="height" >
+    <div>
+        <label for="topAngle">Enter Top Angle</label>
+        <input type="number" name="topAngle">
+    </div>
+
+    <div>
+        <label for="datumAngle">Enter Datum Angle</label>
+        <input type="number" name="datumAngle">
+    </div>
+    <div>
+        <label for="distance"> Enter Distance</label>
+        <input type="number" name="distance">
+    </div>
+    <div>
+        <label for="datumHeight">Enter Datum Height (M)</label>
+        <input type="number" name="datumHeight" value="1.4">
+    </div>
+    <div>
+        <input type="button" value="calculate" onclick="getHeight()">
+    </div>
+    <div>
+        <p>calculated height: <span id="output"> </span></p>
+    </div>
+</form>
+
+
+</body>
+</html>
