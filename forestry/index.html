@@ -10,20 +10,20 @@
 <form name="height" >
     <div>
         <label for="topAngle">Enter Top Angle</label>
-        <input type="number" name="topAngle">
+        <input type="float" name="topAngle">
     </div>
 
     <div>
         <label for="datumAngle">Enter Datum Angle</label>
-        <input type="number" name="datumAngle">
+        <input type="float" name="datumAngle">
     </div>
     <div>
         <label for="distance"> Enter Distance</label>
-        <input type="number" name="distance">
+        <input type="float" name="distance">
     </div>
     <div>
-        <label for="datumHeight">Enter Datum Height (M)</label>
-        <input type="number" name="datumHeight" value="1.4">
+        <label for="datumHeight">Enter Datum Height (m)</label>
+        <input type="float" name="datumHeight" value="1.4">
     </div>
     <div>
         <input type="button" value="calculate" onclick="getHeight()">
@@ -31,6 +31,46 @@
     <div>
         <p>calculated height: <span id="output"> </span></p>
     </div>
+</form>
+<form name="height-diameter">
+    <p> For estimating tree height based on diameter for Radiata Pine</p>
+    <div>
+    </div>
+</form>
+<form name="tree-volume">
+<h3> Tree Volume Calculator</h3>
+<div>
+    <label for="a">a</label>
+    <input name="a" type="float" value="1.936">
+</div>
+<div>
+    <label for="b">b</label>
+    <input name="b" type="float" value="0.955">
+</div>
+
+<div>
+    <label for="c">c</label>
+    <input name="c" type="float" value="-10.18131">
+</div>
+
+<div>
+    <label for="dbh">Diameter Breast Height (cm)</label>
+    <input name="dbh" type="float" >
+</div>
+
+<div>
+    <label for="height">Height (m)</label>
+    <input name="height" type="float" >
+</div>
+<div>
+    <input type="button" value="calculate" onclick="getVolume()"
+</div>
+<div>
+    <p> calculated volume : <span id="volumeOutput"></span></p>
+</div>
+
+
+
 </form>
 
 

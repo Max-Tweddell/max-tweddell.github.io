@@ -11,12 +11,30 @@ function getHeight() {
     document.getElementById("output").innerText = height
 
 }
+
+function getVolume() {
+    a = parseFloat(document.forms[2].a.value)
+    b = parseFloat(document.forms[2].b.value)
+    c = parseFloat(document.forms[2].c.value)
+    height = parseFloat(document.forms[2].height.value)
+    dbh = parseFloat(document.forms[2].dbh.value)
+    volume = round(calculateVolume(a,b,c,dbh,height),5)
+    document.getElementById("volumeOutput").innerText = volume
+}
+
+function calculateVolume(a,b,c,dbh,height) {
+   return  Math.pow(dbh,a) * Math.pow((Math.pow(height, 2)/(height-1.4)),b) * Math.exp(c)
+
+}
 function degToRad(V) {
 
     V=V*Math.PI/180
     return(V)
 }
 
+function round(x) {
+    return (Math.round((x*100))/100)
+}
 
 
 
