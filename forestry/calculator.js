@@ -23,7 +23,7 @@ function getVolume() {
 }
 
 function calculateVolume(a,b,c,dbh,height) {
-   return  Math.pow(dbh,a) * Math.pow((Math.pow(height, 2)/(height-1.4)),b) * Math.exp(c)
+    return  Math.pow(dbh,a) * Math.pow((Math.pow(height, 2)/(height-1.4)),b) * Math.exp(c)
 
 }
 function degToRad(V) {
@@ -42,17 +42,17 @@ function calculateDegHeight(top, datum, dist, datumht) {
 
 
 
-        if (top > 50) {
+    if (top > 50) {
 
-            alert("Angles greater than 50 degrees may produce poor estimates of height")
+        alert("Angles greater than 50 degrees may produce poor estimates of height")
 
-        }
+    }
 
-        top = degToRad(top)
+    top = degToRad(top)
 
-        datum = degToRad(datum)
+    datum = degToRad(datum)
 
-        height = Math.round(10 * (datumht + dist * (Math.tan(top) * Math.abs(Math.cos(datum) - Math.sin(datum))))) / 10
+    height = Math.round(10 * (datumht + dist * (Math.tan(top) * Math.abs(Math.cos(datum) - Math.sin(datum))))) / 10
     return (height)
 
 }
@@ -79,3 +79,7 @@ function calculatePercHeight(top, datum, dist, datumht) {
 
 }
 
+
+function linearRegression(x, y, b) {
+
+}
