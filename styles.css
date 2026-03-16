@@ -6,11 +6,16 @@ div {
     display: table-row;
 }
 
-label, input {
+label,
+input {
     display: table-cell;
     margin-bottom: 10px;
 }
 
 label {
     padding-right: 10px;
+}
+
+p {
+    padding: 35px 20px;
 }
